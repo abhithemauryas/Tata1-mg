@@ -1,0 +1,111 @@
+.CLogo{
+    height: 35px;
+    width: 124px; 
+    /* border:1px solid red; */
+    padding-top:6px;
+}
+
+.navbar{
+display:flex;
+margin:0px 25px;
+gap:25px;
+justify-content: space-between;
+}
+.navbar > div:first-child{
+display: flex;
+justify-content: center;
+}
+#tabs{
+    display: flex;
+    justify-content: space-around;
+}
+#tabs>p{
+    margin :10px
+}
+#loginSignup{
+display: flex;
+justify-content: space-around;
+}
+#loginSignup>p{
+    margin:10px;
+    
+    }
+.cart{
+height:35px;
+width:124px;
+}
+
+.navbar1{
+display:flex;
+margin-left: 35px;
+gap: 4px;
+}
+
+.featuredhbs{
+font-size: 18px;
+color:#212121;
+font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.Ashwagandha{
+height:200px;
+width:280px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+
+}
+
+body{
+font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.istcontainer{
+display:flex;
+box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.navbar11{
+/* border: 1px solid salmon; */
+width:40%;
+margin-top:-10px;
+display: flex;
+gap:6px;
+font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar11>button{
+background-color:#ff6f61 ;
+height:35.84px !important;
+width:180px !important;
+margin-top:12px;
+color:white;
+font-size:16px;
+}
+
+.selec{
+margin-left:56px;
+/* justify-content:space-around; */
+/* padding: 20px; */
+/* gap:80px; */
+}
+
+.navbar11>button{
+border:none;
+border-radius: 5px;
+}
+
+.navbar button {
+    height: 16px;
+    width: 36px;
+    font-size: 10px;
+}
+
+.navbar > p:hover {
+    color: #FF6F61;
+    cursor: pointer;
+}
+#navbar2{
+    display: flex;
+    justify-content: space-between;
+    /* width:60% */
+}
