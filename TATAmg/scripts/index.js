@@ -285,7 +285,7 @@ async function multiple(){
             
         
         
-        div1.append(img,name_div,quantity,rating_div,mrp,price);
+        div1.append(img,quantity,rating_div,name_div,mrp,price);
         
         document.querySelector("#brkfast").append(div1);
     
