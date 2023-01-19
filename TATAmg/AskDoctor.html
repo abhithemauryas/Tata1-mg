@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online-doctor-consultation</title>
+    <link rel="stylesheet" href="styles/askdoctor.css" />
+   
+  
+    <link rel="stylesheet" href="styles/footer1.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link
+    rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+    type="image/x-icon"
+  />
+ <style>
+    a{
+        font-weight: bold;
+    }
+ </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="navbarlogo_tabs">
+          <div id="logo" onclick="mainpage()">
+            <img
+              src="https://www.1mg.com/images/tata_1mg_logo.svg"
+              alt="TATA 1mg"
+              class="logo_img"
+            />
+          </div>
+          <div id="tabs">
+            <div onclick="mainpage()">MEDICINES</div>
+            <div onclick="lab_test_page()">
+              LAB TESTS
+              <div class="reddiv">SAFE</div>
+            </div>
+            <div onclick="ask_doc_page()">CONSULT DOCTOR</div>
+            <div onclick="covid_page()">COVID-19</div>
+            <div onclick="ayurveda_page()"><a href="./Ayurveda.html"> AYURVEDA </a></div>
+            <div onclick="care_plan_page()">
+              CARE PLAN
+              <div class="reddiv">SAVE MORE</div>
+            </div>
+          </div>
+        </div>
+        <div id="loginSignup">
+          <div id="user">
+          </div>
+          <div>Offers</div>
+          <div class="cart_icon" onclick="cart_page()">
+            <img
+              src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/24/000000/external-shopping-cart-finance-dreamstale-lineal-dreamstale-3.png"
+            /><span class="count">0</span>
+          </div>
+          <div style="font-size: 14px">Need Help ?</div>
+        </div>
+      </div>
+      <div class="navbar1">
+        <div class="navbar_inner_div">
+          <div class="location_bar_innerdiv">
+            <div>
+              <i class="material-icons location_icon" style="font-size: 16px"
+                >&#xe0c8;</i
+              >
+              <input
+                class="searchbarinfo"
+                type="text"
+                autocomplete="off"
+                name="name"
+                data-auto-search-bar="true"
+                class="styles_search-input__3I6VS"
+                value=""
+                placeholder="Enter Your City"
+                style="font-weight: 700"
+              />
+              <i class="material-icons location_icon" style="font-size: 16px"
+                >my_location</i
+              >
+            </div>
+          </div>
+          <div class="search_bar">
+            <div class="search_bar_innerdiv">
+              <input
+                class="searchbarinfo"
+                type="text"
+                autocomplete="off"
+                name="name"
+                data-auto-search-bar="true"
+                class="styles_search-input__3I6VS"
+                value=""
+                placeholder="Search for Medicines and Health Products"
+              />
+    
+              <div class="search_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+   
+    <!-- ---------------- -->
+    <!-- Mindiv -->
+    <div id="mindiv1st">
+        <!-- 1st div -->
+        <div id="first_div">
+            <div class="Consultdoc">
+                Consult with Doctors across 22+ Specialities, <br />over
+                <span>Chat, Video &amp; Voice calls.</span>
+            </div>
+            <div class="subheading" style="padding-top: 16px">
+                Skip the struggle of booking appointments.
+            </div>
+            <div class="subheading" style="margin-bottom: 30px">
+                Consult a doctor at your ease
+            </div>
+            <input class="allinput" />
+            <div class="buttondiv">
+                <button class="allbutton">
+            <span class="LandingPage_button-text__2E8rY">CONSULT NOW</span>
+          </button>
+            </div>
+            <div class="style_container__dzpCS">
+                <a href="https://www.1mg.com/subscription-plan/subscriptions?referer=my_consultation_page&amp;dcpFlowSource=doctor-landing-page">
+                    <div class="add">
+                        <img alt="doctor-landing-care-plan-img" src="https://onemg.gumlet.io/image/upload/v1625554511/mqz0j8blegoylexsvtsl.png" class="free_consultation_add" /></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 2nd div -->
+        <div class="second_div" style="visibility: visible">
+            <video autoplay="" type="video/mp4" loop="" poster="AskDocimg\econsultposter.jpg" style="width: 85%; height: 100%">
+          <source
+            src="https://res.cloudinary.com/du8msdgbj/video/upload/v1560927917/eConsult-final_ro63yx.webm"
+            type="video/webm"
+          />
+          <img src="AskDocimg\econsultposter.jpg" />
+        </video>
+        </div>
+    </div>
+    <!-- ------------- -->
+
+    <!-- slider 1st -->
+    <div class="slider1_div">
+        <!-- slider heading -->
+        <div class="slider_heading">Chat with our specialist doctors</div>
+        <div class="slideshow-container1">
+            <div class="mySlides1 fade1">
+                <div class="text1">
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624294/marketing/ew6o5oyhll6fftiaf7nb.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Psychologist</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624208/marketing/fcqsjqyummdc0wv8eepm.png" alt="" style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Skin and Hair Specialist</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624455/marketing/ll4mli8zbol6ovededr6.png" alt="" style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Ear Nose Throat Specialist</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624331/marketing/n9x8duafqzxhbzjixjjq.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Physiotherapist</div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider1 2nd div -->
+            <div class="mySlides1 fade1">
+                <div class="text1">
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624722/marketing/tesj5p15sruirjuy9jix.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Bone and Joint Specialist</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1595408574/marketing/Kaya-Clinic-Logo.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div>Derma Care by Kaya</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624427/marketing/y7x2wylau943va6dcxyr.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Gynaecologist</div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1559624682/marketing/tufguxjnqbedu0uspnrp.png" alt="..." style="
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                " />
+                        <div class="names1">Child Specialist</div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="prev1" onclick="plusSlides1(-1)" src="https://www.1mg.com/images/labs/previous.png" />
+
+            <img class="next1" onclick="plusSlides1(1)" src="https://www.1mg.com/images/labs/next.png" />
+        </div>
+        <div style="text-align: center">
+            <span class="dot1" onclick="currentSlide1(1)"></span>
+            <span class="dot1" onclick="currentSlide1(2)"></span>
+        </div>
+    </div>
+
+    <!-- ------- -->
+    <!-- Steps div -->
+    <div class="step_main_div">
+        <!-- heading -->
+        <div class="steps_heading_div">
+            <h1 class="steps_heading">How Online Doctor Consultation Works?</h1>
+        </div>
+
+        <!-- 1st step -->
+        <div class="steps" style="flex-direction: row">
+            <div class="innerdiv_step" style="text-align: left">
+                <img src="https://www.1mg.com/images/How_it_Works_1.svg" alt="Consult Doctor on Chat" class="inner_img" />
+            </div>
+            <div class="inner_2nd_div_step">
+                <div class="step_num">01</div>
+                <div class="step_dis">
+                    <div class="step_name">Start a session</div>
+                    <div class="step_about">
+                        Select the type of category you would like to consult with the doctor.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd step -->
+        <div class="steps" style="flex-direction: row-reverse">
+            <div class="inner_2nd_div_step">
+                <div class="step_num">02</div>
+                <div class="step_dis">
+                    <div class="step_name">Tell us what’s troubling you</div>
+                    <div class="step_about">
+                        Type in your concern and attach prescription, lab reports if any. Help doctor understand your case better.
+                    </div>
+                </div>
+            </div>
+            <div class="innerdiv_step" style="text-align: right">
+                <img src="https://www.1mg.com/images/How_it_Works_2.svg" alt="Ask a Problem with Doctor" class="inner_img" />
+            </div>
+        </div>
+
+        <!-- 3rd step -->
+        <div class="steps" style="flex-direction: row">
+            <div class="innerdiv_step" style="text-align: left">
+                <img src="https://www.1mg.com/images/How_it_works_3.svg" alt="Consult doctor in India" class="inner_img" />
+            </div>
+            <div class="inner_2nd_div_step">
+                <div class="step_num">03</div>
+                <div class="step_dis">
+                    <div class="step_name">Connect with the doctor</div>
+                    <div class="step_about">
+                        A doctor is auto-assigned to you that best matches your concern. You will get a diagnosis and treatment for your condition.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th step -->
+        <div class="steps" style="flex-direction: row-reverse">
+            <div class="inner_2nd_div_step">
+                <div class="step_num">04</div>
+                <div class="step_dis">
+                    <div class="step_name">Follow up with your doctor</div>
+                    <div class="step_about">
+                        Still, need more clarity? You can follow up with the doctor even after your chat window closes.
+                    </div>
+                </div>
+            </div>
+            <div class="innerdiv_step" style="text-align: right">
+                <img src="https://www.1mg.com/images/How_it_Works_4.svg" alt="Follow doctor online" class="inner_img" />
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <!-- countdis -->
+    <div class="count_sliding_dis">
+        <!-- count -->
+        <div class="Consultations_count">
+            <div class="count_dis">
+                <div class="nums">30L+</div>
+                <div class="Consultations_names">Total Consultations</div>
+            </div>
+            <div class="count_dis">
+                <div class="nums">3k+</div>
+                <div class="Consultations_names">Daily Consultations</div>
+            </div>
+            <div>
+                <div class="nums">22+</div>
+                <div class="Consultations_names">Specialities</div>
+            </div>
+        </div>
+        <!-- ------------ -->
+
+        <!-- slider 2nd -->
+        <div class="sliding_info" style="visibility: visible">
+            <div class="sliding_info_heading">Our Happy Customers</div>
+            <!-- slides -->
+            <div class="slideshow-container">
+                <img class="prev" onclick="next(-1)" src="https://www.1mg.com/images/labs/slider-prev.svg" />
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        Amazingly easy and convenient. Great service for the same price as a clinic visit, without the hassle of having to drive to the doctor's clinic. Couldn't be any happier.
+                    </div>
+                    <div class="text names">Rahul</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text">
+                        I installed the app and went for a free consultation with a dietician. The advice given by Dr. Mirza was simply great. He shared a detailed diet chart and exercises with me which was easy to incorporate into my hectic schedule.
+                    </div>
+                    <div class="text names">Aarohi</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        Best app for consultation and the most effective way to connect with the doctor from anywhere. The doctor replies with great detail and is extremely polite. One can also come back to consult the same doctor anytime.
+                    </div>
+                    <div class="text names">Ronak</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        Initially, I was a little skeptical of consulting a doctor online. But the consultation turned out to be honest and cool, the doctor's behavior was friendly. The best part is that I saved so much time and money!
+                    </div>
+                    <div class="text names">Aarzoo</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        Dr. Chakraborty is so concerned about his patient. I sincerely wish him the best. He always takes the time to understand the problem and on the basis of that he takes the decision and explains it very well. And if you miss out on anything, you can come
+                        back with more questions.
+                    </div>
+                    <div class="text names">Yash</div>
+                </div>
+                <img class="next" onclick="next(1)" src="https://www.1mg.com/images/labs/slider-next.svg" />
+            </div>
+            <br />
+
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- -------- -->
+
+    <!-- quotes -->
+    <div class="quotes">
+        <div class="innerdiv_quotes">
+            <div class="quotes_img">
+                <img src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
+            </div>
+            <div class="inner_quotes">100% Confidential</div>
+            <div class="quotes_dis">
+                All advice &amp; consultations are completely confidential. You can also delete chats whenever you want.
+            </div>
+        </div>
+        <div class="innerdiv_quotes">
+            <div class="quotes_img">
+                <img src="https://www.1mg.com/images/certified.svg" alt="Certified doctors consultation" />
+            </div>
+            <div class="inner_quotes">Certified Doctors</div>
+            <div class="quotes_dis">
+                We offer quality healthcare through our network of certified and experienced doctors.
+            </div>
+        </div>
+        <div class="innerdiv_quotes">
+            <div class="quotes_img">
+                <img src="https://www.1mg.com/images/convenience.svg" alt="Seek expert opinion anytime, anywhere" />
+            </div>
+            <div class="inner_quotes">Convenience</div>
+            <div class="quotes_dis">
+                Forget the hassle of long queues and rush hour. Seek expert opinion anytime, anywhere.
+            </div>
+        </div>
+        <div class="innerdiv_quotes">
+            <div class="quotes_img">
+                <img src="https://www.1mg.com/images/costEffective.svg" alt="Affordable, cost effective, and economical" />
+            </div>
+            <div class="inner_quotes">Cost Effective</div>
+            <div class="quotes_dis">
+                We provide medical assistance on non urgent queries for free. Fee starting at ₹50 for faster response to queries.
+            </div>
+        </div>
+    </div>
+    <!-- ------- -->
+
+    <!-- FAQ -->
+    <div class="FAQ_div">
+        <div class="FAQ_div_heading">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="FAQ_1st_div">
+            <div class="FAQ_QandA_div" style="border-top: none">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>
+                        When will I get an answer to my query? What happens if I don’t get a response?
+                    </div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    If you opt for a free consult, then we make sure the doctor replies within 24 to 48 hours. In case of a paid consult, you will receive a reply within 2-4 business hours. However, if you do not get any response within the stipulated time, we will refund
+                    your money back into your account.
+                </div>
+            </div>
+            <div class="FAQ_QandA_div" style="border-top: 1px solid #dbdadb">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>Who are the consulting doctors?</div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    All the doctors are registered medical practitioners. Along with qualifying degrees - experience, research and track-record of practice are taken into account before a doctor is credentialed with Tata 1mg and is given access to answer patient queries.
+                </div>
+            </div>
+            <div class="FAQ_QandA_div" style="border-top: 1px solid #dbdadb">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>Will the doctor be able to resolve my issue?</div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    Our doctors will give you expert advice on your problem and help you identify next steps which may include further tests, medicine recommendation or lifestyle tips. Few cases require face-to-face examination and we do ask patients to share pictures or
+                    reports if they can, for a conclusive diagnosis.
+                </div>
+            </div>
+            <div class="FAQ_QandA_div" style="border-top: 1px solid #dbdadb">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>Is my consultation private with my doctor?</div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    Privacy of data is one of the fundamental human rights and we at Tata 1mg understand that. All your medical history and online consultation with us are completely private and confidential. We are compliant with industry standards to ensure your consultations
+                    are securely stored.
+                </div>
+            </div>
+            <div class="FAQ_QandA_div" style="border-top: 1px solid #dbdadb">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>For how long is the consultation valid?</div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    In the case of a paid consult, you can follow-up with your doctor for up to 3 days. In case you opt for a free consult, follow-up questions are valid for one day only.
+                </div>
+            </div>
+            <div class="FAQ_QandA_div" style="border-top: 1px solid #dbdadb">
+                <div class="FAQ_question" style="text-align: left; color: #2e2d2d">
+                    <div>Do you have a refund policy?</div>
+                </div>
+                <div class="FAQ_answer" style="text-align: left; color: #9e9e9e">
+                    We have a “take-it-easy” policy. If for any reason you’re not convinced with your online consultation, you can write to us at contact@1mgdoctors.com and we will review the consult with the doctor - seeking clarifications on your queries that were answered.
+                    100% refund will be given in genuine cases.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------- -->
+
+    <!-- Are you doc oc -->
+    <div class="Join_doc">
+        <div class="doc_img_div">
+            <img src="https://www.1mg.com/images/oc_doctor.svg" />
+        </div>
+        <div class="doc_info_div">
+            <div class="doc_heading_div">Are you a doctor ?</div>
+            <div class="doc_dis_div">
+                Be a part of our panel of specialists and connect with your patients from anywhere.
+            </div>
+            <button onclick="pagechange()">JOIN US</button>
+        </div>
+    </div>
+    <!-- --------- -->
+    <!-- footer -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css\footer.css">
+    </head>
+
+    <body>
+        <footer id="footer-bar" class="footer">
+
+
+            <div class="top-bar">
+                <div class="top-head">
+                    <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
+                </div>
+                <div class="flex-box stats-bar">
+                    <div>
+                        <div class="stats-num">160m+</div>
+                        <div class="stats-text">Visitors</div>
+                    </div>
+                    <div>
+                        <div class="stats-num">27m+</div>
+                        <div class="stats-text">Orders Delivered</div>
+                    </div>
+                    <div>
+                        <div class="stats-num">1800+</div>
+                        <div class="stats-text">Cities</div>
+                    </div>
+                </div>
+                <div class="border-btm"></div>
+
+
+                <div class="flex-box down-bar">
+                    <div class="free-text">Get the link to download App</div>
+                    <div class="input-box">
+                        <form><input type="tel" id="phoneNumber" class="input-phone" placeholder="Enter Phone Number" maxLength="10" autoComplete="off" value="" pattern="[6-9]\d{9}" title="Please enter valid 10 digits" required="" />
+                            <button type="submit" class="s-button">Send Link</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="border-btm"></div> -->
+            <!-- <hr> -->
+
+
+
+            <div class="flex-box link-bar">
+                <div class="main-content">
+                    <div>
+                        <h3>Know Us</h3>
+                        <ul>
+                            <li><a href="https://www.1mg.com/aboutUs "><span>About Us</span></a></li>
+                            <li><a href="https://www.1mg.com/contactUs"><span>Contact Us</span></a></li>
+                            <li><a href="https://www.1mg.com/press-coverage "><span>Press Coverage</span></a></li>
+                            <li><a href="https://1mg.darwinbox.in/ms/candidate/careers"><span>Careers</span></a></li>
+                            <li><a href="https://partners.1mg.com "><span>Business Partnership</span></a></li>
+                            <li><a href="https://www.1mg.com/healthpartner "><span>Become a Health Partner</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content ">
+                    <div>
+                        <h3>Our Policies</h3>
+                        <ul>
+                            <li><a href="https://www.1mg.com/PrivacyPolicy"><span>Privacy Policy</span></a></li>
+                            <li><a href="https://www.1mg.com/Tnc"><span>Terms and Conditions </span></a></li>
+                            <li><a href="https://www.1mg.com/editorial-policy-processes"><span>Editorial Policy</span></a></li>
+                            <li><a href="https://www.1mg.com/return-policy"><span>Return Policy</span></a></li>
+                            <li><a href="https://www.1mg.com/ip-policy"><span>IP Policy</span></a></li>
+                            <li><a href="https://www.1mg.com/grievance-redressal-policy"><span>Grievance Redressal Policy</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content ">
+                    <div>
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="https://www.1mg.com/"><span>Order Medicines</span></a></li>
+                            <li><a href="https://www.1mg.com/labs"><span>Book Lab Tests</span></a></li>
+                            <li><a href="https://www.1mg.com/online-doctor-consultation"><span>Consult a Doctor</span></a></li>
+                            <li><a href="https://www.1mg.com/ayurveda"><span>Ayurveda Articles</span></a></li>
+                            <li><a href="https://www.1mg.com/hi/patanjali?utm_source=ayurvedahome&utm_medium=bannner"><span>Hindi Articles</span></a></li>
+                            <li><a href="https://www.1mg.com/subscription-plan/subscriptions"><span>Care Plan</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content ">
+                    <div>
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><span class="s-head ">Social Links</span></li>
+                            <li class="m-web ">
+                                <a href="https://www.facebook.com/1mgOfficial " alt="Facebook " rel="nofollow " target="_blank ">
+                                    <div class="facebook "></div>
+                                </a>
+                                <a href="https://twitter.com/1mgofficial " alt="Twitter " rel="nofollow " target="_blank ">
+                                    <div class="twitter "></div>
+                                </a>
+                                <a href="https://www.youtube.com/c/1mgofficial " alt="You Tube " rel="nofollow " target="_blank ">
+                                    <div class="youtube "></div>
+                                </a>
+                                <a href="https://www.linkedin.com/company/1mg " alt="Linkedin " rel="nofollow " target="_blank ">
+                                    <div class="linkedin "></div>
+                                </a>
+                                <a href="https://medium.com/1mgofficial " alt="Medium Link " rel="nofollow " target="_blank ">
+                                    <div class="medium "></div>
+                                </a>
+                            </li>
+                            <li><span class="grey-txt">Want daily dose of health?</span></li>
+                            <li><button class="s-button">SIGN UP</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content ">
+                    <div>
+                        <h5>Download App</h5>
+                        <ul>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus ">
+                                    <div class="google_play styl ">
+                                        <img src="" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://itunes.apple.com/in/app/1mg/id554578419?mt=8 ">
+                                    <div class="apple_store"><img src="" alt=""></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="border-btm"></div> -->
+
+
+            <div class="auth-bar">
+                <div class="auth-cont">
+                    <div class="reliable "></div>
+                    <div class="details-wrapper">
+                        <div class="f18">Reliable</div>
+                        <p class="f12 grey-txt">All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+                    </div>
+                </div>
+                <div class="auth-cont">
+                    <div class="secure "></div>
+                    <div class="details-wrapper">
+                        <div class="f18">Secure</div>
+                        <p class="f12 grey-txt">Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+                    </div>
+                </div>
+                <div class="auth-cont">
+                    <div class="affordable "></div>
+                    <div class="details-wrapper">
+                        <div class="f18">Affordable</div>
+                        <p class="f12 grey-txt">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="trust-bar">
+                <div class="trust-stamps">
+                    <div class="legitscript legitscript">
+                        <div>
+                            <script src="https://static.legitscript.com/seals/729605.js "></script>
+                        </div>
+                    </div>
+                    <div class="legitscript">
+                        <div class="image-container">
+                            <div class=" "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="free-text bold">India&#x27;s only LegitScript and ISO/ IEC 27001 certified online healthcare platform</div>
+            </div>
+
+
+
+
+            <div class="collapse" onclick="dropdown()">
+                <div class="f-head">
+                    <h2 class="know-text">
+                        <!-- -->Know more about Tata 1mg<span class="collapse"><span><img id="dropdown_img" src="https://img.1mg.com/images/down-arrowRebrand.svg " alt="downArrow "/></span></span>
+                    </h2>
+                </div>
+                <div id="info">
+                    <div></div>
+                    <div>
+                        <article>
+                            <h3>Access medical and health information</h3>
+                            <p class="f14">Tata 1mg provides you with medical information which is curated, written and verified by experts, accurate and trustworthy. Our experts create high-quality content about medicines, diseases, lab investigations, Over-The-Counter
+                                (OTC) health products, Ayurvedic herbs/ingredients, and alternative remedies.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article>
+                            <h3>Order medicines online</h3>
+                            <p class="f14">Get free medicine home delivery in over 1800 cities across India. You can also order Ayurvedic, Homeopathic and other Over-The-Counter (OTC) health products. Your safety is our top priority. All products displayed on Tata 1mg
+                                are procured from verified and licensed pharmacies.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article>
+                            <h3>Book lab tests</h3>
+                            <p class="f14">Book any lab tests and preventive health packages from certified labs and get tested from the comfort of your home. Enjoy free home sample collection, view reports online and consult a doctor online for free.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <article>
+                            <h3>Consult a doctor online</h3>
+                            <p class="f14">Got a health query? Consult doctors online from the comfort of your home for free. Chat privately with our registered medical specialists to connect directly with verified doctors. Your privacy is guaranteed.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-box grey-txt ">
+                <div>
+                    <div class="copyright">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don&#x27;t process requests for Schedule X and other habit forming drugs.</div>
+                </div>
+                <div class="payment "></div>
+            </div>
+        </footer>
+
+    </body>
+
+    </html>
+
+    <script>
+        cartdata =JSON.parse(localStorage.getItem("cartdata"))||[];
+
+count();
+  function count() {
+    
+    if(cartdata.length!=0){
+    document.querySelector(".count").innerText=cartdata.length
+     }
+  }
+
+var user = JSON.parse(localStorage.getItem("userdata"))||[];
+  
+  if(user.length==0){
+    var log = document.createElement("a")
+    log.setAttribute("href","login.html")
+    log.setAttribute("class","logandsign")
+    log.innerText="Login  | "
+    // <a href="login.html" class="logandsign">Login  |</a>
+    var sign = document.createElement("a")
+    sign.setAttribute("href","signUp.html")
+    sign.setAttribute("class","logandsign")
+    sign.innerText="Sign Up"
+    // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
+    document.getElementById("user").append(log,sign);                           
+  }
+
+  if(user.length!=0)
+  {
+    var logout = document.createElement("a")
+    logout.addEventListener("click",function(){
+      localStorage.removeItem("userdata");
+      localStorage.removeItem("cartdata");
+      document.location.reload()
+    })
+    logout.setAttribute("class","logandsign")
+    logout.style.marginLeft="10px"
+    logout.innerText="LogOut"
+
+    var e = "";
+    for(var i=0;i<8;i++)
+    {
+      e += user[0].email[i];
+    }
+    document.querySelector("#user").innerText= "Hi "+e
+    document.querySelector("#user").append(logout)
+  }
+    </script>
+
+    <script src="js\footer.js"></script>
+    <script src="js\header.js"></script>
+</body>
+
+</html>
+
+<script src="scripts/askdoctor.js"></script>
+<!-- <script src="js\header.js"></script> -->
+<script>
+    function mainpage() {
+        window.location.href = "index.html"
+    }
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function next(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function pagechange() {
+  window.location.href="https://www.1mgdoctors.com/doctors/register/new"
+}
+
+
+
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot1");
+  if (n > slides.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active";
+}
+</script>
