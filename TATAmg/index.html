@@ -14,6 +14,32 @@
 </head>
 
 <body>
+    <div id="logincontainer">
+        <div id="loginpage">
+            <div id="left">
+                <img src="" alt="">
+                <h2>Lab Tests at Home</h2>
+                <p>Book any test from any lab. We'll collect the sample and send the reports. Save up to 80% every time.</p>
+            </div>
+            <div id="right">
+                <div id="x">
+                    <span style="font-size: 30px;">&times;</span>
+                </div>
+                <div id="form">
+                    <form action="" id="loginform">
+                        <h1>Login</h1>
+                        <p>Get access to your orders, lab tests & doctor consultations</p>
+                        <input type="email" placeholder="Enter Email ID or Mobile Number" id="inputbox"/>
+                        <input type="submit" placeholder="LOGIN" />
+                        <p>New on 1mg ? <a href="">Sign Up</a></p>
+                        <p>By logging in, you agree to our</p>
+                        <a href="">Terms and Conditions</a> & <a href="">Privacy Policy</a> 
+                        <a href="">Need Help? Get In Touch</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="navbar">
         <div class="header">
             <div class="header_first_row">
@@ -27,7 +53,9 @@
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'careplan.html'">CARE PLAN</div>
                 </div>
                 <div class="header_first_row_second_section">
-                    <div class="login_signup"><span id="login_button" onclick="window.location.href = 'login.html'">Login</span> | <span id="signup_button" onclick="window.location.href = 'signup.html'" >Signup</span></div>
+
+                    <div class="login_signup"><span id="login_button">Login</span> | <span id="signup_button">Signup</span></div>
+
                     <div class="offers" onclick="window.location.href = 'offers.html'">Offers</div>
                     <div class="cart_icon" id="cart_icon" onclick="window.location.href = 'cart.html'"></div>
                     <div class="help" onclick="window.location.href = 'NeedHelp.html'">Need Help?</div>
@@ -198,6 +226,7 @@
             </div>
           </div>
     </div>
+
     <div id="carousel">
         <div class="main_slider">
             <div class="slider"></div>
@@ -529,7 +558,6 @@
     <p id="reserve">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and
         Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
     </div>
-
 </body>
 
 </html>
@@ -555,4 +583,15 @@
         }
     }
 
+
+    let XBtn=document.getElementById("x");
+    let logincontainer=document.getElementById("logincontainer");
+    XBtn.addEventListener("click", ()=>{
+        logincontainer.style.display="none";
+    });
+    let login_button = document.getElementById("login_button");
+    login_button.addEventListener("click", ()=>{
+        logincontainer.style.display="flex";
+    })
 </script>
+
