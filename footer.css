@@ -180,10 +180,7 @@ a {
     height: 26px;
 }
 
-.m-web a div {
-    display: inline-block;
-    margin-right: 12px;
-    margin-bottom: 0;
+
 }
 
 .grey-txt {
@@ -192,14 +189,14 @@ a {
 
 .main-content div h5 {
     margin-bottom: 16px;
-    font-size: .75rem;
+
 }
 
 .google_play {
     background-position: 0 -189px;
     width: 136px;
     height: 41px;
-    /* image src changed */
+
     background: url(https://cdn.shopify.com/s/files/1/0439/5456/9367/files/1.png?v=1602914357) no-repeat;
     margin-bottom: 12px;
 }
@@ -272,7 +269,7 @@ h5 {
 
 .auth-cont p {
     font-size: 16px;
-    opacity: .7;
+
     max-width: 250px;
 }
 
@@ -285,44 +282,3 @@ h5 {
 }
 
 .f-head {
-    border-top: 2px solid rgba(222, 226, 228, .21);
-    border-bottom: 1px solid rgba(222, 226, 228, .21);
-    padding: 12px 30px;
-    cursor: pointer;
-}
-
-.collapse {
-    text-align: left;
-    color: #666;
-}
-
-.know-text {
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-}
-
-img {
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-}
-
-.collapse img {
-    float: right;
-    height: 9px;
-    width: 11px;
-}
-
-.show-desc {
-    display: block;
-    padding: 11px 33px;
-    transition: height .7s ease-out;
-}
-
-.copyright {
-    color: #536971;
-    opacity: .6;
-    margin: 12px;
-}
