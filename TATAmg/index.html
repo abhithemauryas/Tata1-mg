@@ -23,7 +23,7 @@
                     <div class="text_inside_first_header_row">LAB TESTS</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'AskDoctor.html'">ASK DOCTOR</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'covid.html'">COVID19</div>
-                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurbada.html'">AYURVEDA</div>
+                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurvada.html'">AYURVEDA</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'careplan.html'">CARE PLAN</div>
                 </div>
                 <div class="header_first_row_second_section">
@@ -663,12 +663,14 @@
 
             let searchbar = document.querySelector("#search_input").value
             if (searchbar == "covid") {
-                window.location.href = "/covid.html"
+                window.location.href = "covid.html"
 
             }
             else if (searchbar == "aswagandha") {
-                window.location.href = "/aswagandha.html"
-            } 
+                window.location.href = "aswagandha.html"
+            } else if(searchbar == "ayurveda"){
+                window.location.href = "Ayurvada.html"
+            }
 
         }
     }
