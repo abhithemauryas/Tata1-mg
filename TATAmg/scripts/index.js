@@ -311,4 +311,8 @@ async function multiple(){
             localStorage.setItem('mg_base',JSON.stringify(data));
             // window.location.href="productPage.html"
         }
-        
+        let loginPage=document.getElementById("");
+        let loginBtn=document.getElementById("login_button");
+        loginBtn.addEventListener("click",()=>{
+
+        })
