@@ -175,6 +175,10 @@ body {
     height: 20px;
     padding-left: 5px;
     border-radius: 10%;
+    border: 1px solid red;
+  }
+  .div5>p{
+    border: 1px solid red;
   }
   .mrp {
     font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
