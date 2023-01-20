@@ -14,6 +14,32 @@
 </head>
 
 <body>
+    <div id="logincontainer">
+        <div id="loginpage">
+            <div id="left">
+                <img src="" alt="">
+                <h2>Lab Tests at Home</h2>
+                <p>Book any test from any lab. We'll collect the sample and send the reports. Save up to 80% every time.</p>
+            </div>
+            <div id="right">
+                <div id="x">
+                    <span style="font-size: 30px;">&times;</span>
+                </div>
+                <div id="form">
+                    <form action="" id="loginform">
+                        <h1>Login</h1>
+                        <p>Get access to your orders, lab tests & doctor consultations</p>
+                        <input type="email" placeholder="Enter Email ID or Mobile Number" id="inputbox"/>
+                        <input type="submit" placeholder="LOGIN" />
+                        <p>New on 1mg ? <a href="">Sign Up</a></p>
+                        <p>By logging in, you agree to our</p>
+                        <a href="">Terms and Conditions</a> & <a href="">Privacy Policy</a> 
+                        <a href="">Need Help? Get In Touch</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="navbar">
         <div class="header">
             <div class="header_first_row">
@@ -23,129 +49,13 @@
                     <div class="text_inside_first_header_row">LAB TESTS</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'AskDoctor.html'">ASK DOCTOR</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'covid.html'">COVID19</div>
-                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurbada.html'">AYURVEDA</div>
+                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurvada.html'">AYURVEDA</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'careplan.html'">CARE PLAN</div>
                 </div>
                 <div class="header_first_row_second_section">
-                    <div class="login_signup"><span id="login_button" onclick="window.location.href = 'login.html'">Login</span> | <span id="signup_button" onclick="window.location.href = 'signup.html'" >Signup</span></div>
-                    <div id="signup_modal" class="modal">
-                    
-                            <div class="modal-content">
-                                <div class="modal_content_inner">
-                                    <div class="modal_first_section">
-                                        <img src="photos/Health-Related-Queries.png">
-                                        <div class="modal_first_section_first_text">Health Related Queries</div>
-                                        <div class="modal_first_section_second_text">Consult our certified doctors from anywhere, anytime and for free. We guarantee your privacy.</div>
-                                    </div>
-                                    <div class="modal_second_section">
-                                        <div class="login_close_btn" id="signup_close">&times;</div>
-                                        <div class="login_container">
-                                          <div class="login_heading_section">
-                                            <div class="login_first_heading">Sign Up</div>
-                                            <div class="login_second_heading">Please enter your Mobile number to receive One Time Password (OTP)</div>
-                                          </div>
-                                          <div class="input_container">
-                                              <input type="number" class="login_input" id="signup_number_input" placeholder="Enter Mobile Number"/>
-                                          </div>
-                                          <div>
-                                              <button class="login_button">Continue</button>
-                                          </div>
-                                          <div class="login_bottom_content">
-                                              <div class="login_bottom_first_section">
-                                                  <span>
-                                                      <span class="login_bottom_first_section_first_text">Have an account?</span>
-                                                      <span class="login_bottom_first_section_second_text">Login</span>
-                                                  </span>
-                                                  <span>
-                                                      <span class="login_bottom_first_section_first_text">For corporate signup.</span>
-                                                      <span class="login_bottom_first_section_second_text">Click Here</span>
-                                                  </span>
-                                              </div>
-                                              <div class="login_bottom_second_section">
-                                                  <div class="login_bottom_second_section_first_row">
-                                                      By logging in, you agree to our 
-                                                  </div>
-          
-                                                  <div class="login_bottom_second_section_first_row">
-                                                      <a>
-                                                          <span class="terms_and_conditions_text">Terms and conditions</span>
-                                                      </a>
-                                                      &
-                                                      <a>
-                                                          <span class="privacy_policy_text">Privacy policy</span>
-                                                      </a> 
-                                                  </div>
-                                              </div>
-                                              <div class="login_bottom_third_section">
-                                                  <span>Need Help? Get In Touch</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                    </div>
-                                    
-                                </div>
-                              </div>
-                      
-                      </div> 
-          
-                      <div id="login_modal" class="modal">
-          
-                    
-                        <div class="modal-content">
-                          <div class="modal_content_inner">
-                              <div class="modal_first_section">
-                                  Something
-                              </div>
-                              <div class="modal_second_section">
-                                  <div class="login_close_btn" id="login_close">&times;</div>
-                                  <div class="login_container">
-                                    <div class="login_heading_section">
-                                      <div class="login_first_heading">Login</div>
-                                      <div class="login_second_heading">Get access to your orders, lab tests & doctor consultants</div>
-                                    </div>
-                                    <div class="input_container">
-                                        <input type="number" class="login_input" placeholder="Enter Mobile Number" id="login_number_input"/>
-                                    </div>
-                                    <div>
-                                        <button class="login_button">LOGIN</button>
-                                    </div>
-                                    <div class="login_bottom_content">
-                                        <div class="login_bottom_first_section">
-                                            <span>
-                                                <span class="login_bottom_first_section_first_text">New on 1mg?</span>
-                                                <span class="login_bottom_first_section_second_text">Sign Up</span>
-                                            </span>
-                                            <span>
-                                                <span class="login_bottom_first_section_first_text">Have a corporate account?</span>
-                                                <span class="login_bottom_first_section_second_text">Click Here</span>
-                                            </span>
-                                        </div>
-                                        <div class="login_bottom_second_section">
-                                            <div class="login_bottom_second_section_first_row">
-                                                By logging in, you agree to our 
-                                            </div>
-          
-                                            <div class="login_bottom_second_section_first_row">
-                                                <a>
-                                                    <span class="terms_and_conditions_text">Terms and conditions</span>
-                                                </a>
-                                                &
-                                                <a>
-                                                    <span class="privacy_policy_text">Privacy policy</span>
-                                                </a> 
-                                            </div>
-                                        </div>
-                                        <div class="login_bottom_third_section">
-                                            <span>Need Help? Get In Touch</span>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              
-                          </div>
-                        </div>
-                      
-                      </div> 
+
+                    <div class="login_signup"><span id="login_button">Login</span> | <span id="signup_button">Signup</span></div>
+
                     <div class="offers" onclick="window.location.href = 'offers.html'">Offers</div>
                     <div class="cart_icon" id="cart_icon" onclick="window.location.href = 'cart.html'"></div>
                     <div class="help" onclick="window.location.href = 'NeedHelp.html'">Need Help?</div>
@@ -316,6 +226,7 @@
             </div>
           </div>
     </div>
+
     <div id="carousel">
         <div class="main_slider">
             <div class="slider"></div>
@@ -647,7 +558,6 @@
     <p id="reserve">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and
         Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
     </div>
-
 </body>
 
 </html>
@@ -668,9 +578,20 @@
             }
             else if (searchbar == "aswagandha") {
                 window.location.href = "aswagandha.html"
-            } 
+
 
         }
     }
 
+
+    let XBtn=document.getElementById("x");
+    let logincontainer=document.getElementById("logincontainer");
+    XBtn.addEventListener("click", ()=>{
+        logincontainer.style.display="none";
+    });
+    let login_button = document.getElementById("login_button");
+    login_button.addEventListener("click", ()=>{
+        logincontainer.style.display="flex";
+    })
 </script>
+

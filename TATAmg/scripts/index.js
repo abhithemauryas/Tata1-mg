@@ -128,7 +128,7 @@ async function multiple(){
         
     
     
-    div1.append(img,name_div,quantity,rating_div,mrp,price);
+    div1.append(img,quantity,rating_div,name_div,mrp,price);
     
     document.querySelector("#sup").append(div1);
 
@@ -311,4 +311,9 @@ async function multiple(){
             localStorage.setItem('mg_base',JSON.stringify(data));
             // window.location.href="productPage.html"
         }
-        
+
+        let loginPage=document.getElementById("");
+        let loginBtn=document.getElementById("login_button");
+        loginBtn.addEventListener("click",()=>{
+
+        })
