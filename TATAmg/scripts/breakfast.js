@@ -33,7 +33,7 @@ async function multi(){
     let rating_div=document.createElement("div");
     rating_div.setAttribute("class","div5")
     let rating=document.createElement("p");
-    rating.textContent=`4★`;
+    rating_div.textContent=`4★`;
     rating.setAttribute("class","rating");
     rating_div.append(rating);
     let mrp=document.createElement("p");
@@ -46,12 +46,15 @@ async function multi(){
     // var discount=document.createElement("p");
     // discount.textContent=;
     span.setAttribute("class","dis");
+    let lastSection=document.createElement("div");
+    lastSection.setAttribute("class", "lastSection")
     let price=document.createElement("p");
     price.textContent="₹"+ Math.floor((ele.price)*0.24);
     price.setAttribute("class","price")
-    
-    
-    div1.append(img,quantity,rating_div,name_div,mrp,price);
+    let ADC=document.createElement("button");
+    ADC.innerText="ADD";    
+    lastSection.append(price,ADC)
+    div1.append(img,rating_div,name_div,mrp,lastSection);
     
     document.querySelector("#Api_2section").append(div1);
        
