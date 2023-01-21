@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | 1mg</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+      type="image/x-icon"
+    />
+   <link rel="stylesheet" href="styles/cart.css">
+  </head>
+
+  <body>
+    <!-- nav-bar -->
+    <div class="container">
+      <div id="navbar">
+        <div class="nav_1st_innder_div">
+          <div
+            itemscope=""
+            itemtype="http://schema.org/Organization"
+            class="com_logo"
+          >
+            <img
+              src="https://www.1mg.com/images/tata_1mg_logo.svg"
+              alt="1mg, best e pharmacy in India"
+              title="1mg, India's Largest Healthcare Platform"
+              width="124"
+              height="35"
+            />
+          </div>
+          <div class="search_bar">
+            <div class="search_bar_innerdiv">
+              <input
+                class="searchbarinfo"
+                type="text"
+                autocomplete="off"
+                name="name"
+                data-auto-search-bar="true"
+                class="styles__search-input___3I6VS"
+                value=""
+                placeholder="Search for Medicines and Health Products"
+              />
+              <div class="search_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="help_link">
+          <div class="help_link_innerdiv">
+            <a href="/help" class="help_link_anc"><span>Need Help?</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- below-->
+      <div class="belowcont">
+        <div class="left" id="left">
+          <h1 id="section">Cart</h1>
+          <div class="heading" id="productbelow">Order Summary</div>
+          <div class="smallhead" style="margin-bottom: 20px">Your Items</div>
+          <div>
+            <div id="list">
+              <h4>Product</h4>
+              <h4>Product Name</h4>
+              <h4>Price</h4>
+              <h4>Quantity</h4>
+            </div>
+            <div id="container"></div>
+            <div id="checkoutdiv">
+              <div style="display: flex; gap: 10px; align-items: center">
+                <input
+                  id="inputpromo"
+                  type="text"
+                  placeholder="Enter Promocode"
+                />
+                <button id="apply_promo_btn">Apply Promo</button>
+              </div>
+              <button id="checkout_btn">Checkout</button>
+            </div>
+          </div>
+          <div class="cartdetail" id="addinghear"></div>
+        </div>
+        <div class="right" id="righ">
+          <div class="checkout">
+            <div class="checkoutbut">Payment Summary</div>
+            <div class="pament_summary">
+              <div>
+                <!-- <div id="cartname"> -->
+                <div>No. Of Items :</div>
+                <div id="item_no">0</div>
+              </div>
+              <div>
+                <div>Order Subtotal :</div>
+                <div id="total"></div>
+              </div>
+              <div>
+                <div>Discount :</div>
+                <div id="discount">0%</div>
+              </div>
+              <div>
+                <div>Tax (GST) :</div>
+                <div>+18%</div>
+              </div>
+              <div style="border-bottom: 1px solid #d5d9db; margin-bottom: 5px">
+                <div>Shipping :</div>
+                <div>Free Shipping</div>
+              </div>
+              <div>
+                <div>Order Total :</div>
+                <div id="ordertotal">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="scripts/cart.js"></script>
+
+<script>
+  document.querySelector(".com_logo").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
+</script>

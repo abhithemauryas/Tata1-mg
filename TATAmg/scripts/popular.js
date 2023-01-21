@@ -33,7 +33,7 @@ async function multi(){
     let rating_div=document.createElement("div");
     rating_div.setAttribute("class","div5")
     let rating=document.createElement("p");
-    rating.textContent=`4★`;
+    rating_div.textContent=`4★`;
     rating.setAttribute("class","rating");
     rating_div.append(rating);
     let mrp=document.createElement("p");
@@ -57,22 +57,25 @@ async function multi(){
        
     let data_send={
         img:ele.image,
-        name:ele.name,
-        quantity:ele.quantity,
-        rating:ele.rating,
-        mrp:ele.mrp,
-        discount:ele.discount,
+        name:ele.desc,
+    quantity:1,
+        
+        
         price:ele.price
         
      }
      div1.onclick=()=>{
-         showproduct(data_send)
+        
+        var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+        cartdata.push(data_send)
+
+         localStorage.setItem('cartdata',JSON.stringify(cartdata));
+         
      }
      });
      }
      
-    //  function showproduct(data){
-    //      localStorage.setItem('mg_base',JSON.stringify(data));
-    //      window.location.href="productPage.html"
-    //  }
+   
+        //  window.location.href="productPage.html"
+
     

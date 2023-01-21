@@ -293,3 +293,18 @@ body {
         #x:hover{
             cursor: pointer;
         }
+        .count {
+          position: absolute;
+          font-size: 14px;
+          background: #ff6f61;
+          color: #fff;
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          border-radius: 5px;
+          box-shadow: 0 0 1px #333;
+          top: 3px;
+          right: 100px;
+          text-align: center;
+        }
+        

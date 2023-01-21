@@ -57,7 +57,11 @@
                     <div class="login_signup"><span id="login_button">Login</span> | <span id="signup_button">Signup</span></div>
 
                     <div class="offers" onclick="window.location.href = 'offers.html'">Offers</div>
-                    <div class="cart_icon" id="cart_icon" onclick="window.location.href = 'cart.html'"></div>
+                    <div class="cart_icon" onclick="window.location.href = 'cart.html'">
+                        <img
+                          src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/24/000000/external-shopping-cart-finance-dreamstale-lineal-dreamstale-3.png"
+                        /><span class="count">0</span>
+                      </div>
                     <div class="help" onclick="window.location.href = 'NeedHelp.html'">Need Help?</div>
                 </div>
             </div>
@@ -593,5 +597,15 @@
     login_button.addEventListener("click", ()=>{
         logincontainer.style.display="flex";
     })
+}
+cartdata =JSON.parse(localStorage.getItem("cartdata"))||[];
+
+count();
+  function count() {
+    
+    if(cartdata.length!=0){
+    document.querySelector(".count").innerText=cartdata.length
+     }
+  }
 </script>
 

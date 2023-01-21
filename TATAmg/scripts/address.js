@@ -34,9 +34,17 @@ if(obj.flat=="" || obj.Pincodeno=="" || obj.landmark=="" || obj.localityno=="" |
 else{
     userData.push(obj)
     localStorage.setItem("task-list",JSON.stringify(userData))
+    save_btn.addEventListener("click", function () {
+        window.location.href = "finalpayment.html";
+      });
+    
 console.log(userData);
 
 }
 
   
 }
+cancel_btn.addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
+
