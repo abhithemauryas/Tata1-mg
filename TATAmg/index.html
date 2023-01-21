@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="logincontainer">
+    <!-- <div id="logincontainer">
         <div id="loginpage">
             <div id="left">
                 <div id="loginCard">
@@ -41,8 +41,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="signupcontainer">
+    </div> -->
+    <!-- <div id="signupcontainer">
         <div id="loginpage">
             <div id="left">
                 <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
@@ -67,8 +67,8 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
     <div id="navbar">
         <div class="header">
             <div class="header_first_row">
@@ -425,7 +425,7 @@
     <div id="featured_brands">
         <div id="brands_text">
             <h1>Featured brands</h1>
-            <button>SEE ALL</button>
+            <button onclick="seeall()" >SEE ALL</button>
         </div>
         <div class="brands">
             <div>
@@ -469,25 +469,25 @@
     <h1 id="brands_head">Tata 1mg health products</h1>
     <div id="mg"></div>
     <div class="seeall">
-        <button class="fetch2">SEE ALL</button>
+        <button onclick="seeall()" class="fetch2">SEE ALL</button>
     </div>
     <h1 id="brands_head">Pre and probiotics | Supplement of the week</h1>
     <div id="sup"></div>
     <div class="seeall">
-        <button class="fetch2">SEE ALL</button>
+        <button onclick="seeall()" class="fetch2">SEE ALL</button>
     </div>
 
     <h1 id="brands_head">BIOTINE</h1>
     <div id="brkfast"></div>
     <div class="seeall">
-        <button class="fetch2">SEE ALL</button>
+        <button onclick="seeall()" class="fetch2">SEE ALL</button>
     </div>
 
 
     <h1 id="brands_head">BREAKFAST CEREARLS</h1>
     <div id="biotine"></div>
     <div class="seeall">
-        <button class="fetch2">SEE ALL</button>
+        <button onclick="seeall()" class="fetch2">SEE ALL</button>
     </div>
     
 
@@ -772,22 +772,22 @@
         }
     }
 
-    let XBtn = document.getElementById("x");
-    SXBtn = document.getElementById("sx");
-    let logincontainer = document.getElementById("logincontainer");
-    let signupcontainer = document.getElementById("signupcontainer");
-    XBtn.addEventListener("click", () => {
-        logincontainer.style.display = "none";
-    });
-    SXBtn.addEventListener("click", () => {
-        signupcontainer.style.display = "none";
-    });
-    let login_button = document.getElementById("login_button");
+    // let XBtn = document.getElementById("x");
+    // SXBtn = document.getElementById("sx");
+    // let logincontainer = document.getElementById("logincontainer");
+    // let signupcontainer = document.getElementById("signupcontainer");
+    // XBtn.addEventListener("click", () => {
+    //     logincontainer.style.display = "none";
+    // });
+    // SXBtn.addEventListener("click", () => {
+    //     signupcontainer.style.display = "none";
+    // });
+    // let login_button = document.getElementById("login_button");
 
-    login_button.addEventListener("click", ()=>{
-        logincontainer.style.display="flex";
-    })
-}
+    // login_button.addEventListener("click", ()=>{
+    //     logincontainer.style.display="flex";
+    // })
+
 cartdata =JSON.parse(localStorage.getItem("cartdata"))||[];
 
 count();
@@ -797,13 +797,19 @@ count();
     document.querySelector(".count").innerText=cartdata.length
      }
   }
-</script>
-    login_button.addEventListener("click", () => {
-        logincontainer.style.display = "flex";
-    });
-    let signup_button = document.getElementById("signup_button");
-    signup_button.addEventListener("click", () => {
-        signupcontainer.style.display = "flex";
-    });
+    // login_button.addEventListener("click", () => {
+    //     logincontainer.style.display = "flex";
+    // });
+    // let signup_button = document.getElementById("signup_button");
+    // signup_button.addEventListener("click", () => {
+    //     signupcontainer.style.display = "flex";
+    // });
+
+    function seeall(){
+
+        window.location.href="popular.html"
+    }
+    
+    
 </script>
 

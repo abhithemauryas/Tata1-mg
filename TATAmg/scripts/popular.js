@@ -63,15 +63,12 @@ async function multi(){
         
         
 
-        name:ele.name,
-        rating:ele.rating,
-        mrp:ele.mrp,
-        discount:ele.discount,
+        
 
         price:ele.price
         
      }
-     div1.onclick=()=>{
+     ADC.onclick=()=>{
         
         var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
         cartdata.push(data_send)
@@ -81,6 +78,7 @@ async function multi(){
      }
      });
      }
+     
      
    
         //  window.location.href="productPage.html"
