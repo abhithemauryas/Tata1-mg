@@ -33,7 +33,7 @@
   
   #box5 {
     display: flex;
-  
+    align-items: center;
     justify-content: center;
     grid-gap: 30px;
   }
@@ -216,9 +216,9 @@ cursor: pointer;
 /* margin-left: 1160px; */
 }
 
-.fetch2{
-  margin-left: 1160px;
-}
+/* .fetch2{
+  margin-right: 1160px;
+} */
 
 .line{
 width: 95%;

@@ -60,13 +60,25 @@
     
 }
 
-#Api_2section>div{
-    /* border: 1px solid red;  */
+#Api_2section>div{ 
     display: grid;
     width: 260px;
     height: 380px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin: 10px;
-   
-
+    padding: 0px 10px;
+}
+.lastSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.lastSection>button{
+    height:fit-content;
+    width: 30%;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
