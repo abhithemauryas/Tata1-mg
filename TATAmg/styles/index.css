@@ -20,19 +20,19 @@ body {
   }
   @keyframes slide {
     20% {
-      content: url(../images/slider2.png);
+      content: url(../images/slider6.png);
     }
     40% {
-      content: url(../images/slider3.png);
+      content: url(https://onemg.gumlet.io/a_ignore,w_899,h_200,c_fit,q_auto,f_auto/0332ec27-3c8b-4d11-851b-cd107af9eee0.png);
     }
     60% {
       content: url(../images/slider4.jpg);
     }
     80% {
-      content: url(../images/slider5.jpg);
+      content: url(../images/slider3.png);
     }
     100% {
-      content: url(../images/slider1.jpg);
+      content: url(../images/slider8.jpg);
     }
   }
   .fixed_img {
@@ -175,11 +175,8 @@ body {
     height: 20px;
     padding-left: 5px;
     border-radius: 10%;
-    border: 1px solid red;
   }
-  .div5>p{
-    border: 1px solid red;
-  }
+  
   .mrp {
     font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -247,7 +244,6 @@ body {
   #brkfast > div {
    padding: 0px 4px;
   }
-
   #logincontainer{
             background-color: turquoise;
             width: 100%;
@@ -308,3 +304,69 @@ body {
           text-align: center;
         }
         
+=======
+  #logincontainer, #signupcontainer{
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 4 ;
+    position:absolute;
+  }
+#loginpage{
+  display: flex;
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;                                    
+}
+#loginpage > #left {
+  width: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid; */
+}
+#loginpage > #left >#loginCard{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+#loginpage > #right {
+  padding: 20px ;
+  width: 50%;
+  color: black;
+}
+#loginpage > #right > #x, #loginpage > #right > #sx{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border: 1px solid;
+}
+#right > #form{
+  padding: 0px 20px 50px 20px;
+  border: 1px solid;
+}
+#inputbox{
+  border: none;
+  width: 80%;
+  margin: 20px;
+}
+#x:hover, #sx:hover{
+  cursor: pointer;
+}
+
+.seeall{
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: auto;
+}
+
