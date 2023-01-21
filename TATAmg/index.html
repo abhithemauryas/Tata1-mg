@@ -17,12 +17,38 @@
     <div id="logincontainer">
         <div id="loginpage">
             <div id="left">
-                <img src="" alt="">
+                <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
                 <h2>Lab Tests at Home</h2>
                 <p>Book any test from any lab. We'll collect the sample and send the reports. Save up to 80% every time.</p>
             </div>
             <div id="right">
                 <div id="x">
+                    <span style="font-size: 30px;">&times;</span>
+                </div>
+                <div id="form">
+                    <form action="" id="loginform">
+                        <h1>Login</h1>
+                        <p>Get access to your orders, lab tests & doctor consultations</p>
+                        <input type="email" placeholder="Enter Email ID or Mobile Number" id="inputbox"/>
+                        <input type="submit" placeholder="LOGIN" />
+                        <p>New on 1mg ? <a href="">Sign Up</a></p>
+                        <p>By logging in, you agree to our</p>
+                        <a href="">Terms and Conditions</a> & <a href="">Privacy Policy</a> 
+                        <a href="">Need Help? Get In Touch</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signupcontainer">
+        <div id="loginpage">
+            <div id="left">
+                <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+                <h2>Lab Tests at Home</h2>
+                <p>Book any test from any lab. We'll collect the sample and send the reports. Save up to 80% every time.</p>
+            </div>
+            <div id="right">
+                <div id="sx">
                     <span style="font-size: 30px;">&times;</span>
                 </div>
                 <div id="form">
@@ -585,13 +611,22 @@
 
 
     let XBtn=document.getElementById("x");
+    SXBtn=document.getElementById("sx");
     let logincontainer=document.getElementById("logincontainer");
+    let signupcontainer=document.getElementById("signupcontainer");
     XBtn.addEventListener("click", ()=>{
         logincontainer.style.display="none";
+    });
+    SXBtn.addEventListener("click", ()=>{
+        signupcontainer.style.display="none";
     });
     let login_button = document.getElementById("login_button");
     login_button.addEventListener("click", ()=>{
         logincontainer.style.display="flex";
-    })
+    });
+    let signup_button = document.getElementById("signup_button");
+    signup_button.addEventListener("click", ()=>{
+        signupcontainer.style.display="flex";
+    });
 </script>
 
