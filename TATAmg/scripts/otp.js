@@ -21,3 +21,8 @@ function submitOtp(event) {
     alert("wrong otp");
   }
 }
+
+let userData=JSON.parse(localStorage.getItem("task-list"))||[]
+userData.forEach(element => {
+document.querySelector(".num_resend").innerHTML= element.custmobile
+});

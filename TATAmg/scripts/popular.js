@@ -57,21 +57,32 @@ async function multi(){
        
     let data_send={
         img:ele.image,
+
+        name:ele.desc,
+    quantity:1,
+        
+        
+
         name:ele.name,
         rating:ele.rating,
         mrp:ele.mrp,
         discount:ele.discount,
+
         price:ele.price
         
      }
      div1.onclick=()=>{
-         showproduct(data_send)
+        
+        var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+        cartdata.push(data_send)
+
+         localStorage.setItem('cartdata',JSON.stringify(cartdata));
+         
      }
      });
      }
      
-    //  function showproduct(data){
-    //      localStorage.setItem('mg_base',JSON.stringify(data));
-    //      window.location.href="productPage.html"
-    //  }
+   
+        //  window.location.href="productPage.html"
+
     
