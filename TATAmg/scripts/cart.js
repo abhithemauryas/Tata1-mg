@@ -66,12 +66,12 @@ function promocode() {
   var inputpromo = document.querySelector("#inputpromo").value;
   if (inputpromo == "fanki" && count==0) {
     // var total = Number(document.querySelector("#total").innerText);
-    var promototal = total-30/100*total;
+    var promototal = total-26/100*total;
     countarr.push(1);
     localStorage.setItem("count",JSON.stringify(countarr))
     count++;
     document.querySelector("#ordertotal").innerText = "₹"+ Math.floor(promototal.toFixed(2))
-    document.querySelector("#discount").innerText = "-30%"
+    document.querySelector("#discount").innerText = "-26%"
     display(cartdata);
   }
   else if(count>0){

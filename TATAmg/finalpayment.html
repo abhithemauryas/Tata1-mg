@@ -254,9 +254,9 @@ function showtotal() {
   document.querySelector("#ordertotal").innerText = "₹"+ taxtotal.toFixed(2)
 
   if(countarr.length!=0){
-  var promototal = total-30/100*total;
+  var promototal = total-26/100*total;
     document.querySelector("#ordertotal").innerText = "₹"+ Math.floor(promototal.toFixed(2))
-    document.querySelector("#discount").innerText = "-30%"
+    document.querySelector("#discount").innerText = "-26%"
 }
 }
 

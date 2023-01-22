@@ -28,7 +28,7 @@ let obj={
     custmobile:custmobile.value,
     selected:selected.value
 }
-if(obj.flat=="" || obj.Pincodeno=="" || obj.landmark=="" || obj.localityno=="" || obj.cityno=="" || obj.custname=="" || obj.custmobile==""){
+if(obj.flat=="" || obj.Pincodeno=="" || obj.localityno=="" || obj.cityno=="" || obj.custname=="" || obj.custmobile==""){
     alert("please fill your address")
 }
 else{
