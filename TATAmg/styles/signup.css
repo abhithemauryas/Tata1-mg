@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+  
+  body {
+    background-color: #EBEEF6;
+  }
+  
+  #container {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+  
+  #container > div {
+    margin-bottom: -4px;
+    overflow: visible;
+    text-align: center;
+  }
+  #container > div >img {
+    border-radius: 20px;
+    width: 40%;
+    
+  }
+  
+  #form {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+  }
+  
+  #singin {
+    text-align: left;
+    margin-left: -20px;
+    align-self:flex-start;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  #signup {
+    background-color: #FF6F61;
+    color: white;
+  }
+  
+  
+  p {
+    color: rgb(163, 161, 161);
+  }
+  
+  fieldset {
+    height: 0px;
+    border:  0px;
+    border-top: 0.1pc #DDDFFF solid;
+  }
+  
+  button {
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+  }
+  
+  h1 {
+    margin-top: -30px;
+  }
+  
+  .singupbtn {
+    border-radius: 10px;
+    border: none;
+    background-color: #FF6F61;
+    margin-bottom: 10px;
+    color: white;
+    font-size: larger;
+  }
+  
+  a {
+    color: #FF6F61;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  

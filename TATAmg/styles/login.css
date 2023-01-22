@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  body {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebeef6;
+    /* border: red solid; */
+  }
+  
+  #parent {
+    position: relative;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, auto);
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* border: red solid; */
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+  
+  #parent > div {
+    margin-bottom: -4px;
+    overflow: visible;
+    text-align: center;
+  }
+  #parent > div > img {
+    /* border: rebeccapurple solid; */
+    border-radius: 20px;
+    width: 30%;
+  }
+  
+  #formlogin {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    /* border: red solid; */
+  }
+  
+  input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+  }
+  
+  #login {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  p {
+    color: rgb(163, 161, 161);
+    font-size: small;
+  }
+  
+  button {
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+  }
+  
+  a {
+    color: #ff6f61;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
