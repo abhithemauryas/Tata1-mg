@@ -22,7 +22,7 @@
                     <div class="text_inside_first_header_row">LAB TESTS</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'AskDoctor.html'">ASK DOCTOR</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'covid.html'">COVID19</div>
-                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurbada.html'">AYURVEDA</div>
+                    <div class="text_inside_first_header_row" onclick="window.location.href = 'Ayurvada.html'">AYURVEDA</div>
                     <div class="text_inside_first_header_row" onclick="window.location.href = 'careplan.html'">CARE PLAN</div>
                 </div>
                 <div class="header_first_row_second_section">
@@ -386,7 +386,7 @@
 </body>
 <script src="scripts/popular.js"></script>
 <script>
-   
+    var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 
 count();
   function count() {

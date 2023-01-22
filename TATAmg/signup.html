@@ -1,70 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="signup_modal" class="modal">
-                    
-        <div class="modal-content">
-            <div class="modal_content_inner">
-                <div class="modal_first_section">
-                    <img src="photos/Health-Related-Queries.png">
-                    <div class="modal_first_section_first_text">Health Related Queries</div>
-                    <div class="modal_first_section_second_text">Consult our certified doctors from anywhere, anytime and for free. We guarantee your privacy.</div>
-                </div>
-                <div class="modal_second_section">
-                    <div class="login_close_btn" id="signup_close">&times;</div>
-                    <div class="login_container">
-                      <div class="login_heading_section">
-                        <div class="login_first_heading">Sign Up</div>
-                        <div class="login_second_heading">Please enter your Mobile number to receive One Time Password (OTP)</div>
-                      </div>
-                      <div class="input_container">
-                          <input type="number" class="login_input" id="signup_number_input" placeholder="Enter Mobile Number"/>
-                      </div>
-                      <div>
-                          <button class="login_button">Continue</button>
-                      </div>
-                      <div class="login_bottom_content">
-                          <div class="login_bottom_first_section">
-                              <span>
-                                  <span class="login_bottom_first_section_first_text">Have an account?</span>
-                                  <span class="login_bottom_first_section_second_text">Login</span>
-                              </span>
-                              <span>
-                                  <span class="login_bottom_first_section_first_text">For corporate signup.</span>
-                                  <span class="login_bottom_first_section_second_text">Click Here</span>
-                              </span>
-                          </div>
-                          <div class="login_bottom_second_section">
-                              <div class="login_bottom_second_section_first_row">
-                                  By logging in, you agree to our 
-                              </div>
-
-                              <div class="login_bottom_second_section_first_row">
-                                  <a>
-                                      <span class="terms_and_conditions_text">Terms and conditions</span>
-                                  </a>
-                                  &
-                                  <a>
-                                      <span class="privacy_policy_text">Privacy policy</span>
-                                  </a> 
-                              </div>
-                          </div>
-                          <div class="login_bottom_third_section">
-                              <span>Need Help? Get In Touch</span>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                
-            </div>
-          </div>
-  
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link
+    rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+    type="image/x-icon"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img id="images"
+          src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png"
+          alt=""
+        />
+        <h2>Make Healthcare Simpler</h2>
+        <p>Get medicine information order medicines book lab tests and consult doctors online from the comfort of your home</p>
+      </div>
+      <form id="form">
+        <p id="singin">Have an acount? <a href="login.html">Sign In</a></p>
+        <h1>Sign Up</h1>
+        <input type="text" id="name" placeholder="Enter Your Name" />
+        <input type="text" id="email" placeholder="Enter Email" />
+        <input type="tel" id="phonenum" placeholder="Enter Mobile Number" />
+        <input type="password" id="pass" placeholder="Enter Password" />
+        
+        <input type="submit" id="signup" />
+        <fieldset>
+          <legend><p>or sign up with</p></legend>
+        </fieldset>
+        <div>
+          <button type="button" class="singupbtn">
+            <i class="fa fa-google" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="singupbtn">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="singupbtn">
+            <i class="fa fa-apple" aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
+
+<script src="scripts/signup.js"></script>
