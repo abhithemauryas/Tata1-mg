@@ -63,7 +63,7 @@ async function multi(){
         
         
 
-        name:ele.name,z,
+        name:ele.name,
         rating:ele.rating,
         mrp:ele.mrp,
         discount:ele.discount,
