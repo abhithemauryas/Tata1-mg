@@ -448,4 +448,16 @@ background-color:rgb(255, 111, 97);
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }  
+  } 
+
+.reddiv {
+  height: 16px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 11px;
+  align-items: center;
+  padding: 0 3px;
+  border-radius: 2px;
+}
