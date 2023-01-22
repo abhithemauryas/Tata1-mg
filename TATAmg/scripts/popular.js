@@ -13,9 +13,25 @@ async function multi(){
       console.log("err:",e);
   }
   }
-
+let value=document.querySelectorAll(".filt");
+for (let btn of value){
+    btn.addEventListener("click",(e)=>{
+        filter(btn.value)
+    })
+}
+async function filter(value){
+    try {
+        let res=await fetch(`https://63c71d064ebaa8028553e6e9.mockapi.io/abhishek?filter=${value}`);
+        let ans=await res.json();
+        console.log(ans)
+        displaymg(ans)
+    } catch (error) {
+        
+    }
+}
+// console.log(value)
     function displaymg(mg_data){
-    
+        document.querySelector("#Api_section").innerHTML=""
     mg_data.map(function(ele){
     let div1= document.createElement("div");
     let img= document.createElement("img")
@@ -58,12 +74,15 @@ async function multi(){
     let data_send={
         img:ele.image,
 
-        name:ele.desc,
+        // name:ele.desc,
     quantity:1,
         
         
 
-        
+        name:ele.name,
+        rating:ele.rating,
+        mrp:ele.mrp,
+        discount:ele.discount,
 
         price:ele.price
         

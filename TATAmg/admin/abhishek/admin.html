@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./admin.css">
+    <title>Alpha | Lyst | Admin-Database</title>
+  </head>
+  <body>
+    <div id="admin_desbord_navbar"> 
+            Admin - Database
+            <a href="./dummy.html"><img src="./alpha.jpg" width="200px" ></a>
+    </div>
+  <div id="admin_desbord">
+    <div id="slide">
+      <div id="admin">
+        <div>
+          <img src ="https://www.pngkit.com/png/detail/508-5084521_download-female-profile-icon-png-clipart-computer-icons.png">
+        </div>
+        <h2>Hello Admin</h2>
+        <div>
+           <button><a id="products_button" href="./admin.html">Products</a></button>
+           <button><a id="products_button" href="./customers_admin.html">Customers</a></button>
+        </div>
+      </div>
+      <div id="addform">
+        <h3>Add Product</h3>
+        <form>
+           <p>
+            <label>Product Name</label>
+            <input type="text" id="Product_name" required="required" placeholder="Product Name"/>
+           </p>
+           <p>
+            <label>Image</label>
+            <input type="text" id="image" required="required" placeholder="https://cdna.lystit.com/200/250/tr/photos/stefaniamode/4ca0bc5e/burberry-neutrals-Vintage-Check-Cotton-Sneakers.jpeg"/>
+           </p>
+           <p>
+            <label>Item-Catergories</label>
+            <select>
+              <option>Select-Item</option>
+              <option>Shoes</option>
+              <option>Clothes</option>
+              <option>Accessories</option>
+              <option>Cettire</option>
+              <option>Saks OFF 5TH</option>
+              <option>Homes</option>
+             </select>
+           </p>
+           <p>
+            <label>Price</label>
+            <input type="number" id="price" required="required" placeholder="Product Price"/>
+           </p>
+           <p>
+            <label>Description</label>
+            <input type="text" id="description" required="required" placeholder="Woodhouse Clothing" />
+           </p>
+           <p>
+            <label>Brand</label>
+            <input type="text" id="brands" required="required" placeholder="Brand name"/>
+           </p>
+           <p>
+            <input id="submit" type="submit" value="Add" >
+           </p>
+        </form>
+      </div>
+      <!-- for pagination-warpper -->
+     
+    </div>
+    <div id="right-side">
+      <div id="functionality">
+        <h2 class = total >Total Products : 0</h2>
+        <input id="search" type="search" placeholder="search product">
+        <select>
+          <option>Select-Item</option>
+          <option>Shoes</option>
+          <option>Clothes</option>
+          <option>Accessories</option>
+          <option>Cettire</option>
+          <option>Saks OFF 5TH</option>
+          <option>Homes</option>
+         </select>
+      </div>
+      <div id="parent-product-div">
+            <!-- <div class="child-product-div">
+              <div>
+                  <img src="https://cdna.lystit.com/200/250/tr/photos/stefaniamode/4ca0bc5e/burberry-neutrals-Vintage-Check-Cotton-Sneakers.jpeg">
+              </div>
+              <div>
+                  <div>
+                      <p><b>Product:</b> Vintage Check Canvas Sneaker - Multicolor</p>
+                      <p><b>Brands:</b> BURBERRY</p>
+                      <p><b>Price:</b> 556</p>
+                      <p><b>Description:</b> </p>
+                      <p><b>Id:</b> 15</p>
+                      <p><b>Item:</b> shoes</p>
+                    </div>
+                  <div class="deleteButton">
+                      <button>Delete</button>
+                      <button>Edit</button>
+                  </div>
+              </div>
+            </div>  -->
+        </div>
+      <div class="pagination-wrapper" id="pagination-wrapper">Pagination</div>
+    </div>
+   </div>
+  </body>
+</html>
+<script src="./admin.js"></script>
