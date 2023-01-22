@@ -7,7 +7,7 @@ function display(cartdata) {
     var img = document.createElement("img");
     img.setAttribute("src", elem.img);
     var name = document.createElement("div");
-    name.innerText = elem.name;
+    name.innerText = elem.desc;
     var price = document.createElement("p");
     price.innerText ="₹" + 1 * elem.price ;
     var qntydiv = document.createElement("div");

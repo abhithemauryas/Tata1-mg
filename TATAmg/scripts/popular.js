@@ -58,12 +58,12 @@ async function multi(){
     let data_send={
         img:ele.image,
 
-        name:ele.desc,
+        // name:ele.desc,
     quantity:1,
         
         
 
-        name:ele.name,
+        name:ele.name,z
         rating:ele.rating,
         mrp:ele.mrp,
         discount:ele.discount,
