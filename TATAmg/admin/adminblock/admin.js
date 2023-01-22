@@ -6,7 +6,9 @@ let total = 60;
 window.addEventListener("load", () => {
     fetchdata();
     total = localStorage.getItem("total")||60;
+
 });
+var product= JSON.parse(localStorage.getItem("product"))||[];
 
 async function fetchdata(page_number=1,data_limit_perpage=6){
     try {
@@ -17,12 +19,14 @@ async function fetchdata(page_number=1,data_limit_perpage=6){
                }
             })
             if(res.ok){
+                
                 //let token = await res.json();
                //console.log(res);
                 // console.log(res.headers.gets("x-"))
                 //console.log(res);
                 let out = await res.json();
                 //console.log(out);
+               
                 localStorage.setItem("total",total);
                 total = localStorage.getItem("total");
                 let total_page_show = Math.ceil(total/data_limit_perpage);
@@ -36,12 +40,16 @@ async function fetchdata(page_number=1,data_limit_perpage=6){
          // alert(error);
         }
 };
-// console.log(main);
+
 
 let main = document.querySelector("#parent-product-div");
+// var cartdata = JSON.parse(localStorage.getItem("product")) || [];
 function display(data){
+
     main.innerHTML = "";
-   main.innerHTML= data.map((elem)=>{
+   main.innerHTML= data.map((elem,index)=>{
+    // cartdata.push(elem)
+    // localStorage.setItem("product",cartdata)
         return `
         <div class="child-product-div">
                     <div>
@@ -49,7 +57,7 @@ function display(data){
                     </div>
                     <div>
                     <div>
-                        <p><b>Brands:</b> ${elem.brands}</p>
+                        <p><b>Brands:</b> ${elem.brand}</p>
                         <p><b>Price:</b> ₹ ${elem.price}</p>
                         <p><b>Description:</b> ${elem.desc}</p>
                       </div>
@@ -61,15 +69,18 @@ function display(data){
               </div>
         `
     }).join(" ");
+   
 
     let deleteButton = document.querySelectorAll(".delete");
-    for(let key of deleteButton){
-        key.addEventListener("click",(event)=>{
+    deleteButton.addEventListener("click",(event)=>{
+    
+      
             let data_id = event.target.dataset.id;
             deleteItem(data_id);
+            
         });
     }; 
-};
+
 /*  <p><b>Id:</b> ${elem.id}</p>*/
 
 async function deleteItem(id){
@@ -80,15 +91,21 @@ async function deleteItem(id){
                 "Content-Type":"application/json",
             },
         });
+      
+       
         if(res.ok){
             --total;
             fetchdata();
             alert("Product has been deleted succussfully");
+         
         }
+    
     } catch (error) {
       alert(error);
     }
 };
+
+
 
 let Addform = document.querySelector("#addform form");
 Addform.addEventListener("submit",(event)=>{

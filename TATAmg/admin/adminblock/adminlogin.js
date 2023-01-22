@@ -17,7 +17,7 @@ function login_input(event){
      if(obj.username === username && obj.password === password)
      {
         alert("Login Successful !");
-        window.location.href="./customers_admin.html";
+        window.location.href="admin/adminblock/admin.html";
      }
      else{
         alert("Wrong Credentials!");
