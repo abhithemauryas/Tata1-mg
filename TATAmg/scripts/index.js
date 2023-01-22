@@ -74,7 +74,7 @@ async function multi(){
      
      function showproduct(data){
          localStorage.setItem('mg_base',JSON.stringify(data));
-        //  window.location.href="productPage.html"
+         window.location.href="popular.html"
      }
     
 async function multiple(){
@@ -152,7 +152,7 @@ async function multiple(){
     
     function showproduct(data){
         localStorage.setItem('mg_base',JSON.stringify(data));
-        // window.location.href="productPage.html"
+        window.location.href="popular.html"
     }
     
     multi1();
@@ -231,7 +231,7 @@ async function multiple(){
          
          function showproduct(data){
              localStorage.setItem('mg_base',JSON.stringify(data));
-            //  window.location.href="productPage.html"
+             window.location.href="productPage.html"
          }
         
     async function multiple1(){
@@ -309,7 +309,7 @@ async function multiple(){
         
         function showproduct(data){
             localStorage.setItem('mg_base',JSON.stringify(data));
-            // window.location.href="productPage.html"
+            window.location.href="popular.html"
         }
 
         let loginPage=document.getElementById("");
