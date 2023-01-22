@@ -1,5 +1,3 @@
-// let products_button = document.querySelector("#products_button");
-// products_button.addEventListener("click",fetchdata());
 let productBaseUrl = "https://63c71d064ebaa8028553e6e9.mockapi.io/abhishek";
 let total = 60;
 
@@ -176,10 +174,4 @@ function renderPaginationButtons(total_pages){
 function getAsButton(text, clss, dataId){
     return `<button class="${clss}" ${dataId ? `data-id=${dataId}` : ''}> ${text} </button>`
 };
-
-
-
-
-
-
 

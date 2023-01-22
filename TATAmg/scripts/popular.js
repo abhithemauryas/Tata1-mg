@@ -98,6 +98,17 @@ function displaymg(mg_data) {
 
             localStorage.setItem('cartdata', JSON.stringify(cartdata));
             console.log(cartdata)
+            cartnum();
+
+            displaymg(mg_data)
+
+function cartnum(){
+if(cartdata!=[])
+{
+  document.querySelector(".count").innerText=cartdata .length;
+  displaymg(mg_data)
+}
+}
 
         }
     });

@@ -16,7 +16,7 @@ function submitOtp(event) {
     input_otp4 == OTP[3]
   ) {
     alert("Payment Successful");
-    window.location.href = "success.html";
+    window.location.href = "index.html";
   } else {
     alert("wrong otp");
   }
