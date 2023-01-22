@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(250, 250, 250);
+    width:auto;
+}
+
+#admin_desbord_navbar{
+    height:30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight:bolder;
+    text-decoration: underline;
+    padding:2px;
+    margin-bottom:35px;
+    position: relative;
+    left:10%;
+}
+
+#admin_desbord_navbar img{
+    position:relative;
+    right:-25%;
+    top:50%;
+}
+
+
+#admin_desbord{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#slide{
+ width:40%;
+}
+#admin{
+    text-align: center;
+}
+#admin img{
+    width:30%;
+}
+#addform{
+    width:80%;
+    padding:2%;
+    margin-top:2%;
+    margin-left:5%;
+    padding-left:8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#addform:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#addform>h3{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#addform label{
+    display:block;
+}
+
+#addform input{
+    display:block;
+    width: 80%;
+    padding:4%;
+}
+
+#addform select{
+    display:block;
+    width: 90%;
+    padding:4%;
+    font-size:15px;
+}
+#submit{
+    font-size:20px;
+    background-color: rgb(233, 232, 232);
+    border:none;
+    border-radius: 15% 10%; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left:5%;
+    font-weight: bold;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: rgb(160, 159, 159);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#admin button{
+    padding:5%;
+    border:none;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#admin a{
+    text-decoration: none;
+    color:rgb(42, 50, 165);
+}  
+
+#admin button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+
+#functionality{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+#functionality input{
+    padding:0 30% 0 0;
+    font-size:15px;
+    text-align-last:center;
+    width:fit-content;
+    margin-bottom: 2%;
+    border-style: outset;
+}
+#functionality input:hover{
+    border: none;
+}
+
+#functionality select{
+    padding:0 2%;
+    margin-bottom: 2%;
+}
+
+
+/* product page */
+#parent-product-div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border:2px solid black; */
+    /* width:auto; */
+    gap:20px;
+}
+
+.child-product-div{
+    display:flex;
+    justify-content:space-evenly; 
+}
+
+.deleteButton{
+    display:flex;
+    justify-content:space-between;
+}
+
+.deleteButton button{
+    padding: 3% 15%;
+    border:none;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.deleteButton button:hover{
+    color:brown;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#parent-product-div>div{
+    /* border:2px solid black; */
+    padding:2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+}
+#parent-product-div img{
+    height:80%;
+}
+
+/* pagination - wrapper */
+.pagination-wrapper{
+    /* display:flex; */
+    width:100%;
+}
+.pagination-btn-list{
+    display:flex;
+    justify-content: center;
+    height: auto;
+}
+.pagination-wrapper button{
+    padding:1% 3%;
+    margin:1%;
+    border:none;
+    font-size:16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+}
+
+.pagination-wrapper button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:rgb(158, 157, 157);
+}
+
+.pagi-btn-color{
+  
+}
+
