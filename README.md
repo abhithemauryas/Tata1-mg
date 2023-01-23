@@ -5,11 +5,11 @@ team leader :- Abhishek Kumar Maurya
 
 
 team :-  
-        Abhishek Kumar Maurya
-        Ishwer Sharma
-        Krutika shambharkar
-        Md faiyaz alam
-        Mishant singh
+        Abhishek Kumar Maurya,
+        Ishwer Sharma,
+        Krutika shambharkar,
+        Md faiyaz alam,
+        Mishant singh,
         
 this project is basically a collarabative project to clone the site of TATA 1mg.
 we have tried to clone the landing page, login, signup, cart, product, payment pages of the site.
