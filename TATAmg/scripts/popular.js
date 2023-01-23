@@ -94,10 +94,23 @@ function displaymg(mg_data) {
         ADC.onclick = () => {
 
             var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
-            cartdata.push(data_send)
+            let flag=false;
+            for(let i=0;i<cartdata.length;i++){
+                if(cartdata[i].name==ele.desc){
+                    flag=true
+                }
+            }
+            if(flag==true){
+                alert("product already in cart")
+            }else{
+                cartdata.push(data_send)
 
-            localStorage.setItem('cartdata', JSON.stringify(cartdata));
-            console.log(cartdata)
+                localStorage.setItem('cartdata', JSON.stringify(cartdata));
+                alert("product added to card")
+                console.log(cartdata)
+
+            }
+           
             cartnum();
 
             displaymg(mg_data)
