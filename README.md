@@ -51,23 +51,20 @@ Microsoft Edge,Google Chrome & Mozilla Firefox - To check the functionality and 
 # Website..
 
 # Home Page..
-![Screenshot (1913)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/d1615b6c-0809-44e9-87fc-cd265f6d7f8b)
+![Screenshot (1920)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/e77ac97b-f12d-4a70-b5dd-d01b3c64a34c)
 
 
 # Products Page
-
-![Screenshot (1919)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/0cf61780-44ae-485a-9355-94ff119e198f)
-
+![Screenshot (1921)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/9731f19d-79e5-4798-8189-f99bf68cbbf7)
 
 # Orders Details
-![Screenshot (1916)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/897d6d1c-f45d-42ea-b029-dd0403e30f86)
+![Screenshot (1923)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/16a29966-b4df-461e-a1aa-e372f379c2c7)
 
-# Cart
-![Screenshot (1915)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/2fad6593-b63d-4157-8cdb-62c5f92bc805)
 
 # Payment
-![Screenshot (1918)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/124feb3c-07c4-45dd-8012-ab1481ae546e)
+![Screenshot (1925)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/28d839d5-596b-4c42-a3ed-16c949dfabef)
 
 # Address
-![Screenshot (1917)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/370b802b-f824-49a0-a9fd-4d5aa6f51c33)
+
+![Screenshot (1924)](https://github.com/abhithemauryas/Amazon-clone/assets/115460755/f3e7f41c-5d30-4b9e-9197-e6252978b473)
 
